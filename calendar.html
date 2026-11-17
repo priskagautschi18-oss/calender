@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Responsive Kalenderübersicht von FriendCal">
+
+  <title>Kalender | FriendCal</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/calendar.js" defer></script>
+</head>
+
+<body class="app-page">
+  <a class="skip-link" href="#main-content">Direkt zum Inhalt</a>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Kalendernavigation">
+      <div class="sidebar__header">
+        <a class="brand" href="calendar.html" aria-label="FriendCal Startseite">
+          <span class="brand__mark" aria-hidden="true">FC</span>
+          <span>FriendCal</span>
+        </a>
+
+        <button
+          class="icon-button sidebar__close"
+          id="sidebar-close"
+          type="button"
+          aria-label="Navigation schliessen">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <nav class="sidebar-navigation" aria-label="Kalender auswählen">
+        <p class="sidebar-navigation__label">Kalender</p>
+
+        <ul>
+          <li>
+            <a
+              class="sidebar-link is-active"
+              href="#calendar"
+              data-view-title="Mein Kalender">
+              <span class="sidebar-link__icon" aria-hidden="true">M</span>
+              <span>Mein Kalender</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="sidebar-link"
+              href="#calendar"
+              data-view-title="Gruppenkalender">
+              <span class="sidebar-link__icon sidebar-link__icon--blue" aria-hidden="true">G</span>
+              <span>Gruppenkalender</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="sidebar-link"
+              href="#calendar"
+              data-view-title="Freundeskalender">
+              <span class="sidebar-link__icon sidebar-link__icon--gold" aria-hidden="true">F</span>
+              <span>Freundeskalender</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="sidebar-link"
+              href="#calendar"
+              data-view-title="Freie Zeit">
+              <span class="sidebar-link__icon sidebar-link__icon--green" aria-hidden="true">Z</span>
+              <span>Freie Zeit</span>
+            </a>
+          </li>
+        </ul>
+
+        <p class="sidebar-navigation__label">Organisation</p>
+
+        <ul>
+          <li>
+            <a
+              class="sidebar-link"
+              href="#calendar"
+              data-view-title="Einladungen">
+              <span class="sidebar-link__icon sidebar-link__icon--neutral" aria-hidden="true">E</span>
+              <span>Einladungen</span>
+              <span class="sidebar-link__badge" aria-label="2 offene Einladungen">2</span>
+            </a>
+          </li>
+
+          <li>

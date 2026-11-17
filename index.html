@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Anmeldung zum gemeinsamen Freundeskalender FriendCal">
+
+  <title>Anmelden | FriendCal</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/login.js" defer></script>
+</head>
+
+<body class="login-page">
+  <a class="skip-link" href="#login-form">Direkt zur Anmeldung</a>
+
+  <main class="login-layout">
+    <section class="login-intro" aria-labelledby="intro-title">
+      <p class="eyebrow eyebrow--light">Gemeinsam Zeit finden</p>
+
+      <h1 id="intro-title">FriendCal</h1>
+
+      <p class="login-intro__lead">
+        Plane gemeinsame Termine, teile freie Zeitfenster und behalte deine
+        persönlichen Pläne an einem Ort im Blick.
+      </p>
+
+      <ul class="login-benefits" aria-label="Vorteile von FriendCal">
+        <li>Private und gemeinsame Termine</li>
+        <li>Kalender für deine Freundesgruppen</li>
+        <li>Spontane freie Zeit sichtbar machen</li>
+      </ul>
+    </section>
+
+    <section class="login-panel" aria-labelledby="login-title">
+      <div class="login-card">
+        <p class="eyebrow">Willkommen zurück</p>
+
+        <h2 id="login-title">Anmelden</h2>
+
+        <p class="login-card__intro">
+          Melde dich an, um deine Kalender zu öffnen.
+        </p>
+
+        <form class="form" id="login-form">
+          <div class="form-field">
+            <label for="email">E-Mail-Adresse</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="name@beispiel.ch"
+              required>
+          </div>
+
+          <div class="form-field">
+            <div class="label-row">
+              <label for="password">Passwort</label>
+              <a href="#">Passwort vergessen?</a>
+            </div>
+
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              minlength="6"
+              required>
+          </div>
+
+          <button class="button button--primary button--full" type="submit">
+            Anmelden
+          </button>
+
+          <output
+            class="form-status"
+            id="login-status"
+            aria-live="polite">
+          </output>
+        </form>
+
+        <p class="login-card__footer">
+          Noch kein Konto? <a href="#">Konto erstellen</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="login-footer">
+    <p>&copy; 2026 FriendCal</p>
+  </footer>
+</body>
+
+</html>
